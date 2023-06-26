@@ -1,0 +1,29 @@
+unit cliente;
+
+interface
+
+uses
+  System.SysUtils,
+  pessoa;
+
+type
+  TCliente = class(TPessoa) // A classe TCliente vai herdar de TPessoa
+  private
+    FvalorCredito: Currency;
+  public
+    property valorCredito: Integer read FvalorCredito; overload //write FvalorCredito; somente leitura: read/get
+    property valorCredito: Currency read FvalorCredito; overload
+    function receber(Value: Integer) : string;
+
+  end;
+
+implementation
+
+{ TCliente }
+
+function TCliente.receber(Value: Integer): string;
+begin
+  Result := Value.ToString;
+end;
+
+end.
