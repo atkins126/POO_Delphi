@@ -16,7 +16,8 @@ type
   property DataNascimento: string read FDataNascimento write FDataNascimento;
   function idade : Integer;
   function retornaDados : string; virtual;
-
+  function contrato : string; virtual; abstract; //Utilizando abstract no metodo, obrigado as classes filhas a implementar se quiser utilizar o metodo herdado
+  //por ser abstract não necessita ter implementação, mas quem utilizar como herança vai ter que implementar a função.
   end;
 
 implementation
@@ -37,3 +38,7 @@ begin
 end;
 
 end.
+
+// Abstract = Obriga as classes filhas a implementar o metodo caso utilize como herança
+// Para ser Abstract é obrigatório ser vitual
+// Abastract não obrigado a implementar o metodo na classe pai

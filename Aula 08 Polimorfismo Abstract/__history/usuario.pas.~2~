@@ -1,0 +1,19 @@
+unit usuario;
+
+interface
+
+uses
+  pessoa;
+
+type
+  TUsuario = class(TPessoa)
+  private
+
+  public
+
+
+  end;
+
+implementation
+
+end.

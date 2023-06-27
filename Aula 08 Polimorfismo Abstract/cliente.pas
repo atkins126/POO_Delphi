@@ -13,12 +13,19 @@ type
   public
   property CPF: string read FCPF write FCPF;
   function retornaDados : string; override;
+  function contrato : string; override; // herdou da classe pai TPessoa que não tinha implementação porque foi abstract
+                                        // porém aqui como está herdada terá que ter uma implementação.
 
   end;
 
 implementation
 
 { TCliente }
+
+function TCliente.contrato: string;   //implementação.
+begin
+  Result := 'TCliente Contrato';
+end;
 
 function TCliente.retornaDados: string;
 begin

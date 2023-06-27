@@ -1,0 +1,86 @@
+unit view.principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, usuario;
+
+type
+  TForm1 = class(TForm)
+    Memo1: TMemo;
+    Button1: TButton;
+    Memo2: TMemo;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses
+  cliente, pessoa;
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  pessoa : TPessoa;
+  cliente : TCliente;
+  usuario : TUsuario;
+
+
+begin
+  pessoa := TPessoa.Create;
+  cliente := TCliente.Create;
+  usuario := TUsuario.Create;
+
+  try
+    pessoa.Nome := 'Jucinei Luiz Belo';
+    pessoa.DataNascimento := '17/08/1989';
+
+    cliente.Nome := 'Isabela ninfeta gostosa';
+    cliente.DataNascimento := '15/07/2007';
+    cliente.CPF := '696969';
+
+
+    Memo1.Clear;
+    Memo1.Lines.Add('========Pessoa===========');
+    Memo1.Lines.Add('Nome: ' + pessoa.Nome);
+    Memo1.Lines.Add('Data de Nascimento: ' + pessoa.DataNascimento);
+    Memo1.Lines.Add('Idade: ' + pessoa.idade.ToString);
+    Memo1.Lines.Add('=======================');
+    Memo1.Lines.Add('========Cliente===========');
+    Memo1.Lines.Add('Nome: ' + cliente.Nome);
+    Memo1.Lines.Add('Data de Nascimento: ' + cliente.DataNascimento);
+    Memo1.Lines.Add('Idade: ' + cliente.idade.ToString);
+    Memo1.Lines.Add('CPF: ' + cliente.CPF);
+    memo1.Lines.Add('Contrato: ' + cliente.contrato);
+    Memo1.Lines.Add('=======================');
+
+    Memo1.Lines.Add('Usuario: ' + usuario.contrato);
+
+    Memo2.Clear;
+    Memo2.Lines.Add('=========Pessoa===========');
+    Memo2.Lines.Add('Retorna Dados ' + pessoa.retornaDados);
+    Memo2.Lines.Add('====================');
+    Memo2.Lines.Add('=========Clientes===========');
+    Memo2.Lines.Add('Retorna Dados ' + cliente.retornaDados);
+    Memo2.Lines.Add('====================');
+
+
+
+  finally
+    pessoa.Free;
+    cliente.Free;
+  end;
+
+end;
+
+end.

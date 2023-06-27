@@ -1,0 +1,43 @@
+unit pessoa;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+  TPessoa = class
+  private
+  FNome : String;
+  FDataNascimento : string;
+  public
+
+  property Nome: string read FNome write FNome;
+  property DataNascimento: string read FDataNascimento write FDataNascimento;
+  function idade : Integer;
+  function retornaDados : string; virtual;
+  function contrato : string; virtual; abstract; //Utilizando abstract no metodo, obrigado as classes filhas a implementar se quiser utilizar o metodo herdado
+  //por ser abstract não necessita ter implementação, mas quem utilizar como herança vai ter que implementar a função.
+  end;
+
+implementation
+
+{ TPessoa }
+
+function TPessoa.idade: Integer;
+begin
+  Result := Trunc((now - StrToDate(DataNascimento)) / 365);
+end;
+
+function TPessoa.retornaDados: string;
+begin
+    Result := ' Nome: ' + FNome +
+            ', Data de Nascimento: ' + FDataNascimento +
+            ', Idade : ' + Self.idade.ToString ;
+
+end;
+
+end.
+
+//Abstract = Obriga as classes filhas a implementar o metodo caso utilize como herança
+//Para ser Abstract é obrigatório ser vitual
