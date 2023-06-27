@@ -1,0 +1,44 @@
+unit ContaBancaria;
+
+interface
+
+type
+  TContaBancaria = class  //Identidade = nome da classe
+
+  private     //atributos privados
+
+    FNome : string;
+    FSaldo : Double;
+    function GetSaldo: Double;
+
+  public
+
+    property Nome: string read FNome write FNome;  //atributos publicos metodo get e set
+    property Saldo: Double read GetSaldo; //atributos publicos metodo get e set
+    procedure Depositar(Value : Double);
+    procedure Sacar(Value : Double);
+
+
+  end;
+
+implementation
+
+{ TContaBancaria }
+
+procedure TContaBancaria.Depositar(Value: Double);
+begin
+  FSaldo := FSaldo + Value + (Value * 0.10);
+
+end;
+
+function TContaBancaria.GetSaldo: Double;
+begin
+  Result := FSaldo;
+end;
+
+procedure TContaBancaria.Sacar(Value: Double);
+begin
+  FSaldo := FSaldo - Value;
+end;
+
+end.

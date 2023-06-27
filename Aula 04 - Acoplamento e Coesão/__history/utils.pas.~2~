@@ -1,0 +1,30 @@
+unit utils;
+
+interface
+
+uses
+  FuncoesData;
+
+type
+  TUtils = class
+
+  function calculaIdade(Value: string): Integer;
+
+  function Funcoes : TfuncoesData;
+  end;
+
+implementation
+
+{ TUtils }
+
+function TUtils.Funcoes: TfuncoesData;
+begin
+  Result := TFuncoesData.Create;
+end;
+
+function TFuncoesData.calculaIdade(Value: string): Integer;
+begin
+  Result := Trunc((now - StrToDate(Value)) / 365.25);
+end;
+
+end.

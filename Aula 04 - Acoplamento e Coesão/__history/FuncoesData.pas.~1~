@@ -1,0 +1,12 @@
+unit FuncoesData;
+
+interface
+type
+  TFuncoesData
+
+
+  end;
+
+implementation
+
+end.

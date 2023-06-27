@@ -1,0 +1,23 @@
+unit utils;
+
+interface
+
+uses
+  FuncoesData;
+
+type
+  TUtils = class
+
+  function Funcoes : TfuncoesData;
+  end;
+
+implementation
+
+{ TUtils }
+
+function TUtils.Funcoes: TfuncoesData;
+begin
+  Result := TFuncoesData.Create;
+end;
+
+end.

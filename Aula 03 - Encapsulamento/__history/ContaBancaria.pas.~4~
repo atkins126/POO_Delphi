@@ -1,0 +1,22 @@
+unit ContaBancaria;
+
+interface
+
+type
+  TContaBancaria = class
+
+  private
+
+    FNome: string;
+    function GetSaldo: Double;
+
+  public
+
+    property Nome: string read FNome write FNome;
+    property Saldo: Double read GetSaldo;
+
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,22 @@
+unit pessoa;
+
+interface
+
+uses
+  utils;
+
+type
+  TPessoa = class
+
+  private
+
+  public
+  nome : string;
+  dataNascimento : string;
+  idade : TUtils
+  end;
+
+
+implementation
+
+end.

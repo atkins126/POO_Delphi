@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/06/21 09:41:59.000.813,=C:\Users\Juci\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/21 09:42:59.000.357,C:\Users\Juci\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Juci\Desktop\Important - Juci\Juci\Delphi POO\Aula 03 - Encapsulamento\Unit1.pas</Transaction>
+    <Transaction>2023/06/21 09:42:59.000.357,C:\Users\Juci\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Juci\Desktop\Important - Juci\Juci\Delphi POO\Aula 03 - Encapsulamento\Unit1.dfm</Transaction>
+    <Transaction>2023/06/21 09:43:11.000.711,C:\Users\Juci\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Juci\Desktop\Important - Juci\Juci\Delphi POO\Aula 03 - Encapsulamento\aula03.dproj</Transaction>
+    <Transaction>2023/06/21 09:44:14.000.695,=C:\Users\Juci\Desktop\Important - Juci\Juci\Delphi POO\Aula 03 - Encapsulamento\Unit2.pas</Transaction>
+    <Transaction>2023/06/21 09:46:15.000.648,C:\Users\Juci\Desktop\Important - Juci\Juci\Delphi POO\Aula 03 - Encapsulamento\Unit2.pas=C:\Users\Juci\Desktop\Important - Juci\Juci\Delphi POO\Aula 03 - Encapsulamento\ContaBancaria.pas</Transaction>
+  </Transactions>
+</BorlandProject>

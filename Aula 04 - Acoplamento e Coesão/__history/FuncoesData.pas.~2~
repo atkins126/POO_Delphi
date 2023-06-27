@@ -1,0 +1,20 @@
+unit FuncoesData;
+
+interface
+type
+  TFuncoesData = class
+
+  function calculaIdade(Value: string) : Integer;
+
+  end;
+
+implementation
+
+{ TFuncoesData }
+
+function TFuncoesData.calculaIdade(Value: string): Integer;
+begin
+
+end;
+
+end.

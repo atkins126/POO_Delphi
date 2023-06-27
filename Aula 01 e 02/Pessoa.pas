@@ -1,0 +1,52 @@
+unit Pessoa;
+
+interface
+
+type
+  TPessoa = class     // identidade
+  private             // atributos
+    FCPF: string;
+
+  public              // atributos
+    nome: string;
+    property CPF: String read FCPF write FCPF;
+
+  end;
+
+implementation
+
+end.
+// property é comparado aos metodos getters e setters
+
+//set : setar um valor / escrever um valor = write
+//get : buscar um valor / ler um valor  = read
+
+
+{4 Pilares da Orientação a Objetos
+
+1º Pilar = Abstração
+2º Pilar = Encapsulamento
+3º Pilar = Herança
+4º Pilar = Polimorfismo
+
+----------------------------------------------------------------------------------
+1º PILAR = ABSTRAÇÃO
+
+1 - Identidade = Dar nomenclatura
+Em regra por convenção no Delphi, utiliza-se T e o nome da Classe, exemplo: TPessoa
+
+2 - Caracteristicas(Propriedades) = Basicamente propriedades de objetos do mundo real,
+seriam basicamente os parametros, exemplo: Pessoa tem endereço, Pessoa tem nome, Pessoa tem documento
+Pessoa tem CPF, Pessoa tem genero, parametro Saldo
+
+3 - Metodos = Ação exemplo: Pessoa anda = metodo Andar
+Pessoa corre, metodo correr, metodo Sacar
+
+----------------------------------------------------------------------------------
+
+
+}
+
+
+
+
