@@ -1,0 +1,16 @@
+unit cliente;
+
+interface
+type
+  TCliente = class TPessoa
+
+
+
+  end;
+
+
+
+
+implementation
+
+end.

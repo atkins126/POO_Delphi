@@ -1,0 +1,14 @@
+unit pessoa;
+
+interface
+
+type
+  TPessoa = class
+  private
+  public
+
+  end;
+
+implementation
+
+end.

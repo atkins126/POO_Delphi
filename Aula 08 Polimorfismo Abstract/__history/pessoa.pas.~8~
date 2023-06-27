@@ -1,0 +1,40 @@
+unit pessoa;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+  TPessoa = class
+  private
+  FNome : String;
+  FDataNascimento : string;
+  public
+
+  property Nome: string read FNome write FNome;
+  property DataNascimento: string read FDataNascimento write FDataNascimento;
+  function idade : Integer;
+  function retornaDados : string; virtual;
+
+  end;
+
+implementation
+
+{ TPessoa }
+
+function TPessoa.idade: Integer;
+begin
+  Result := Trunc((now - StrToDate(DataNascimento)) / 365);
+end;
+
+function TPessoa.retornaDados: string;
+begin
+    Result := ' Nome: ' + FNome +
+            ', Data de Nascimento: ' + FDataNascimento +
+            ', Idade : ' + Self.idade.ToString +
+            ', Cpf : ' + Fcpf;
+
+end;
+
+end.
