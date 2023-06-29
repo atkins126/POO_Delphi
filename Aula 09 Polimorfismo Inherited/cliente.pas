@@ -29,12 +29,13 @@ end;
 
 function TCliente.RetornaDados: string;
 begin
-    Result := ' Nome: ' + Self.Nome +
-            ', Data de Nascimento: ' + Self.DataNascimento +
-            ', Idade : ' + Self.idade.ToString +
-            ' CPF: ' + FCPF;
+  inherited;    //herdar
+  Result := dados + ' CPF: ' + FCPF + ' sou filha da classe: ' + NomeClass;
 end;
 
 end.
 
-//overt
+//inherited signigica herdar
+
+
+

@@ -10,11 +10,15 @@ type Tpessoa = class
 
   FNome : string;
   FDataNascimento : string;
+  FDados : string;
+  FNomeClass : string;
 
   public
 
   property Nome: string read FNome write FNome;
   property DataNascimento: string read FDataNascimento write FDataNascimento;
+  property dados: string read Fdados write Fdados;
+  property NomeClass: string read FNomeClass write FNomeClass;
   function Idade: Integer;
   function RetornaDados : string; virtual;
   function Contrato : string; virtual; abstract;
@@ -32,7 +36,8 @@ end;
 
 function Tpessoa.RetornaDados: string;
 begin
-  Result := ' Nome: ' + FNome +
+  NomeClass := 'TPessoa';
+  dados := ' Nome: ' + FNome +
             ', Data de Nascimento: ' + FDataNascimento +
             ', Idade : ' + Self.idade.ToString ;
 end;

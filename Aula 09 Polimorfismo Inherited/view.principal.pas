@@ -57,9 +57,6 @@ begin
     Memo1.Lines.Add('CPF: ' + cliente.CPF);
     Memo1.Lines.Add('Contrato: ' + cliente.Contrato);
 
-    Memo2.Lines.Add('============Pessoa=============');
-    Memo2.Lines.Add(pessoa.RetornaDados);
-    Memo2.Lines.Add('=============================');
     Memo2.Lines.Add('============Cliente=============');
     Memo2.Lines.Add(cliente.RetornaDados);
     Memo2.Lines.Add('=============================');
