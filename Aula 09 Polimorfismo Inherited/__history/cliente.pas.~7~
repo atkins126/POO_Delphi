@@ -1,0 +1,29 @@
+unit cliente;
+
+interface
+
+uses
+  pessoa;
+type
+  TCliente = class(TPessoa)
+  private
+
+  FCPF : string;
+
+  public
+  property CPF: string read FCPF write FCPF;
+  function Contrato : string; override;
+
+
+  end;
+
+implementation
+
+{ TCliente }
+
+function TCliente.RetornaDados: string;
+begin
+    Result := 'Contrato TPessoa ';
+end;
+
+end.

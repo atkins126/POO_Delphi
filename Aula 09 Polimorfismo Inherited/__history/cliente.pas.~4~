@@ -1,0 +1,22 @@
+unit cliente;
+
+interface
+
+uses
+  pessoa;
+type
+  TCliente = class(TPessoa)
+  private
+
+  FCPF : string;
+
+
+
+  public
+
+
+  end;
+
+implementation
+
+end.

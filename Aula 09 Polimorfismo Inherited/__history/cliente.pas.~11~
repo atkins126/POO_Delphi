@@ -1,0 +1,38 @@
+unit cliente;
+
+interface
+
+uses
+  pessoa, System.SysUtils;
+type
+  TCliente = class(TPessoa)
+  private
+
+  FCPF : string;
+
+  public
+  property CPF: string read FCPF write FCPF;
+  function Contrato : string; override;
+  function RetornaDados : string;  override;
+
+
+  end;
+
+implementation
+
+{ TCliente }
+
+function TCliente.Contrato: string;
+begin
+    Result := 'Contrato TPessoa ';
+end;
+
+function TCliente.RetornaDados: string;
+begin
+    Result := ' Nome: ' + Self.Nome +
+            ', Data de Nascimento: ' + Self.DataNascimento +
+            ', Idade : ' + Self.idade.ToString ;
+
+end;
+
+end.
