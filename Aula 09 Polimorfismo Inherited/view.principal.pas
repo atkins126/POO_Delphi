@@ -38,6 +38,31 @@ begin
   cliente := TCliente.Create;
 
   try
+    pessoa.Nome := 'Jucinei';
+    pessoa.DataNascimento := '17/08/1989';
+
+    cliente.Nome := 'João';
+    cliente.DataNascimento := '11/03/200';
+    cliente.CPF := '666.666.596.00';
+
+    Memo1.Lines.Add('============Pessoa=============');
+    Memo1.Lines.Add('Nome: ' + pessoa.Nome);
+    Memo1.Lines.Add('Data de Nascimento: ' + pessoa.DataNascimento);
+    Memo1.Lines.Add('Idade: ' + pessoa.Idade.ToString);
+    Memo1.Lines.Add('=============================');
+    Memo1.Lines.Add('============Cliente=============');
+    Memo1.Lines.Add('Nome: ' + cliente.Nome);
+    Memo1.Lines.Add('Data de Nascimento: ' + cliente.DataNascimento);
+    Memo1.Lines.Add('Idade: ' + cliente.Idade.ToString);
+    Memo1.Lines.Add('CPF: ' + cliente.CPF);
+    Memo1.Lines.Add('Contrato: ' + cliente.Contrato);
+
+    Memo2.Lines.Add('============Pessoa=============');
+    Memo2.Lines.Add(pessoa.RetornaDados);
+    Memo2.Lines.Add('=============================');
+    Memo2.Lines.Add('============Cliente=============');
+    Memo2.Lines.Add(cliente.RetornaDados);
+    Memo2.Lines.Add('=============================');
 
   finally
     cliente.Free;

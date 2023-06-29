@@ -1,0 +1,22 @@
+unit pessoa;
+
+interface
+
+type
+  TPessoa = class
+
+  private
+  FNome : string;
+  FDataNascimento : string;
+
+  public
+
+  property Nome: string read FNome write FNome;
+  property DataNascimento: string read FDataNascimento write FDataNascimento;
+
+
+  end;
+
+implementation
+
+end.

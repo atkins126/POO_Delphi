@@ -24,7 +24,7 @@ implementation
 
 function TCliente.Contrato: string;
 begin
-    Result := 'Contrato TPessoa ';
+    Result := 'Contrato TCliente ';
 end;
 
 function TCliente.RetornaDados: string;
@@ -36,3 +36,5 @@ begin
 end;
 
 end.
+
+//overt
