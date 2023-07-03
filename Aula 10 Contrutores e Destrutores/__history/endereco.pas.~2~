@@ -1,0 +1,16 @@
+unit endereco;
+
+interface
+
+type
+
+  TEndereco = class
+  private
+
+  public
+
+  end;
+
+implementation
+
+end.

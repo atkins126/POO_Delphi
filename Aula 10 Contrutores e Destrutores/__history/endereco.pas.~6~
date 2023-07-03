@@ -1,0 +1,23 @@
+unit endereco;
+
+interface
+
+type
+
+  TEndereco = class
+
+  private
+
+    FLogradouro: string;
+    FNumero: string;
+
+  public
+
+    property Logradouro: string read FLogradouro write FLogradouro;
+    property Numero: string read FNumero write FNumero;
+
+  end;
+
+implementation
+
+end.
