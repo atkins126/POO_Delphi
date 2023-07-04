@@ -1,0 +1,49 @@
+unit pessoa;
+
+interface
+
+type
+  TPessoa = class
+  private // Somente pode ser acessado dentro da unit por classes filhas
+    Fnome: string;
+
+  public
+    property nome: string read Fnome write Fnome;
+
+  protected // somente herdado por classes filhas (classes derivadas)
+
+    FCPF: string;
+
+  strict private // somente pode ser utilizada pela classe ou seja ninguem herda
+
+    FSegredo: string;
+  end;
+
+type
+  TCliente = class(TPessoa)
+  private
+
+  public
+    vagjia : string;
+    procedure ReceberDados(value: string);
+
+  end;
+
+type
+  TTeste = class
+  private
+  public
+  procedure teste;
+
+  end;
+
+implementation
+
+{ TCliente }
+
+procedure TCliente.ReceberDados(value: string);
+begin
+
+end;
+
+end.

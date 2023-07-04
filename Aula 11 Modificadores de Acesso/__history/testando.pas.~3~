@@ -1,0 +1,16 @@
+unit testando;
+
+interface
+
+uses
+  pessoa;
+
+type
+
+  TTestando = class(TPessoa)
+
+  end;
+
+implementation
+
+end.
