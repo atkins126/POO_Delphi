@@ -10,10 +10,13 @@ type
   TfrmCadastroTarefa = class(TForm)
     Panel1: TPanel;
     Panel2: TPanel;
-    Edit1: TEdit;
     Memo1: TMemo;
     Panel3: TPanel;
     btnSalvar: TButton;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Edit1: TEdit;
   private
     { Private declarations }
   public

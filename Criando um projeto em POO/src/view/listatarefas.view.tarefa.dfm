@@ -2,7 +2,7 @@ object frmCadastroTarefa: TfrmCadastroTarefa
   Left = 0
   Top = 0
   Caption = 'Cadastro de Tarefa'
-  ClientHeight = 299
+  ClientHeight = 290
   ClientWidth = 523
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -17,18 +17,20 @@ object frmCadastroTarefa: TfrmCadastroTarefa
     Left = 0
     Top = 0
     Width = 523
-    Height = 299
+    Height = 290
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitHeight = 299
     object Panel2: TPanel
       Left = 0
-      Top = 248
+      Top = 239
       Width = 523
       Height = 51
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitTop = 248
       object Panel3: TPanel
         Left = 0
         Top = 5
@@ -47,19 +49,77 @@ object frmCadastroTarefa: TfrmCadastroTarefa
         end
       end
     end
-    object Edit1: TEdit
-      Left = 16
-      Top = 24
-      Width = 481
-      Height = 21
-      TabOrder = 1
-    end
     object Memo1: TMemo
-      Left = 16
-      Top = 72
-      Width = 481
+      Left = 0
+      Top = 82
+      Width = 523
       Height = 161
+      Align = alTop
+      TabOrder = 1
+      ExplicitLeft = 8
+      ExplicitTop = 77
+      ExplicitWidth = 481
+    end
+    object Panel4: TPanel
+      Left = 0
+      Top = 0
+      Width = 523
+      Height = 27
+      Align = alTop
+      Alignment = taLeftJustify
+      BevelOuter = bvNone
+      Caption = '  Titulo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 2
+    end
+    object Panel5: TPanel
+      Left = 0
+      Top = 49
+      Width = 523
+      Height = 33
+      Align = alTop
+      Alignment = taLeftJustify
+      BevelOuter = bvNone
+      Caption = '  Descri'#231#227'o'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      ExplicitTop = 65
+    end
+    object Panel6: TPanel
+      Left = 0
+      Top = 27
+      Width = 523
+      Height = 22
+      Align = alTop
+      Alignment = taLeftJustify
+      BevelOuter = bvNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      object Edit1: TEdit
+        Left = 0
+        Top = 0
+        Width = 523
+        Height = 22
+        Align = alClient
+        TabOrder = 0
+        ExplicitTop = 6
+        ExplicitHeight = 21
+      end
     end
   end
 end

@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  listatarefas.model.usuario, Vcl.ComCtrls;
 
 type
   TfrmListadeTarefas = class(TForm)
@@ -18,10 +19,11 @@ type
     pnlPesquisar: TPanel;
     Edit1: TEdit;
     btnPesquisar: TButton;
-    ListBox1: TListBox;
+    ListView1: TListView;
     procedure FormCreate(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
   private
-    { Private declarations }
+    function ValidaUsuario(aEmail, aSenha: string) : Boolean;
   public
     { Public declarations }
   end;
@@ -32,9 +34,17 @@ var
 implementation
 
 uses
-  listatarefas.view.login;
+  listatarefas.view.login, listatarefas.view.tarefa;
 
 {$R *.dfm}
+
+procedure TfrmListadeTarefas.btnNovoClick(Sender: TObject);
+var
+  LCadastroTarefa : TfrmCadastroTarefa;
+begin
+
+
+end;
 
 procedure TfrmListadeTarefas.FormCreate(Sender: TObject);
 var
@@ -43,10 +53,30 @@ begin
   lLogin := TfrmLogin.Create(nil);
   try
     lLogin.ShowModal;
+    if not ValidaUsuario(lLogin.edtEmail.Text, lLogin.edtSenha.Text) then
+    begin
+      ShowMessage('Usuário ou senha inválido.');
+      Application.Terminate;
+    end;
 
   finally
     lLogin.Free;
 
+  end;
+
+end;
+
+function TfrmListadeTarefas.ValidaUsuario(aEmail, aSenha: string): Boolean;
+var lUsuario: TUsuario;
+begin
+  lUsuario := TUsuario.Create;
+  try
+    lUsuario.Email := 'mail@mail.com';
+    lUsuario.Senha := '123';
+
+    Result := ((lUsuario.Email = aEmail) and (lUsuario.Senha = aSenha));
+  finally
+    lUsuario.Free;
   end;
 
 end;

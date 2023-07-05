@@ -3,7 +3,8 @@ unit listatarefas.view.login;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
@@ -21,6 +22,8 @@ type
     btnCadastrar: TButton;
     edtEmail: TEdit;
     edtSenha: TEdit;
+    procedure btnEntrarClick(Sender: TObject);
+    procedure btnCadastrarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,6 +35,33 @@ var
 
 implementation
 
+uses
+  listatarefas.view.cadastro;
+
 {$R *.dfm}
+
+procedure TfrmLogin.btnCadastrarClick(Sender: TObject);
+var
+  lCadastroUsuario: TfrmCadastroUsuario;
+begin
+  lCadastroUsuario := TfrmCadastroUsuario.Create(nil);
+  try
+    lCadastroUsuario.ShowModal;
+    if lCadastroUsuario.ModalResult = mrOk then
+    begin
+      edtEmail.Text := lCadastroUsuario.FUsuario.Email;
+      edtSenha.Text := lCadastroUsuario.FUsuario.Senha;
+      btnEntrar.SetFocus;
+    end;
+  finally
+    FreeAndNil(lCadastroUsuario);
+  end;
+
+end;
+
+procedure TfrmLogin.btnEntrarClick(Sender: TObject);
+begin
+  Close;
+end;
 
 end.

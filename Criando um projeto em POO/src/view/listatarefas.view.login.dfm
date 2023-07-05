@@ -21,10 +21,6 @@ object frmLogin: TfrmLogin
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 112
-    ExplicitTop = 152
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object Panel2: TPanel
       Left = 0
       Top = 0
@@ -33,9 +29,6 @@ object frmLogin: TfrmLogin
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = 8
-      ExplicitTop = 49
-      ExplicitWidth = 185
     end
     object Panel4: TPanel
       Left = 0
@@ -45,12 +38,11 @@ object frmLogin: TfrmLogin
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitWidth = 295
       object edtEmail: TEdit
         Left = 48
         Top = 4
         Width = 209
-        Height = 26
+        Height = 21
         TabOrder = 0
       end
     end
@@ -62,7 +54,6 @@ object frmLogin: TfrmLogin
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitWidth = 295
       object Label1: TLabel
         Left = 128
         Top = 1
@@ -85,8 +76,6 @@ object frmLogin: TfrmLogin
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 3
-      ExplicitTop = 97
-      ExplicitWidth = 295
       object lblSenha: TLabel
         Left = 128
         Top = 0
@@ -109,12 +98,11 @@ object frmLogin: TfrmLogin
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 4
-      ExplicitWidth = 295
       object edtSenha: TEdit
         Left = 48
         Top = 6
         Width = 209
-        Height = 26
+        Height = 21
         TabOrder = 0
       end
     end
@@ -133,6 +121,7 @@ object frmLogin: TfrmLogin
         Height = 45
         Caption = 'Entrar'
         TabOrder = 0
+        OnClick = btnEntrarClick
       end
       object btnCadastrar: TButton
         Left = 168
@@ -141,6 +130,7 @@ object frmLogin: TfrmLogin
         Height = 45
         Caption = 'Cadastrar'
         TabOrder = 1
+        OnClick = btnCadastrarClick
       end
     end
   end
