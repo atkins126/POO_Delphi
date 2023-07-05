@@ -1,9 +1,9 @@
-object Form1: TForm1
+object frmListadeTarefas: TfrmListadeTarefas
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Lista de Tarefas'
   ClientHeight = 323
-  ClientWidth = 635
+  ClientWidth = 610
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,24 +11,22 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 635
+    Width = 610
     Height = 323
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 224
-    ExplicitTop = 104
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitWidth = 635
     object pnlTitulo: TPanel
       Left = 0
       Top = 0
-      Width = 635
+      Width = 610
       Height = 41
       Align = alTop
       BevelOuter = bvNone
@@ -40,21 +38,19 @@ object Form1: TForm1
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 0
-      ExplicitLeft = 392
-      ExplicitTop = 56
-      ExplicitWidth = 185
+      ExplicitWidth = 608
     end
     object Panel3: TPanel
       Left = 0
       Top = 277
-      Width = 635
+      Width = 610
       Height = 46
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitTop = 272
+      ExplicitWidth = 635
       object btnCancelar: TButton
-        Left = 546
+        Left = 519
         Top = 0
         Width = 89
         Height = 45
@@ -81,33 +77,31 @@ object Form1: TForm1
     object Panel4: TPanel
       Left = 0
       Top = 41
-      Width = 635
+      Width = 610
       Height = 236
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 344
-      ExplicitTop = 160
-      ExplicitWidth = 185
-      ExplicitHeight = 41
+      ExplicitWidth = 635
       object pnlPesquisar: TPanel
         Left = 0
         Top = 0
-        Width = 635
+        Width = 610
         Height = 31
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
+        ExplicitWidth = 635
         object Edit1: TEdit
-          Left = 0
+          Left = 2
           Top = 2
-          Width = 540
-          Height = 25
+          Width = 511
+          Height = 21
           TabOrder = 0
           Text = 'Edit1'
         end
         object btnPesquisar: TButton
-          Left = 546
+          Left = 519
           Top = 0
           Width = 89
           Height = 25
@@ -118,15 +112,12 @@ object Form1: TForm1
       object ListBox1: TListBox
         Left = 0
         Top = 31
-        Width = 635
+        Width = 610
         Height = 205
         Align = alClient
         ItemHeight = 13
         TabOrder = 1
-        ExplicitLeft = 256
-        ExplicitTop = 80
-        ExplicitWidth = 121
-        ExplicitHeight = 97
+        ExplicitWidth = 649
       end
     end
   end

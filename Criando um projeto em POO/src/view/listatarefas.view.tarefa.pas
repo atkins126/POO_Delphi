@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
-  TForm3 = class(TForm)
+  TfrmCadastroTarefa = class(TForm)
     Panel1: TPanel;
     Panel2: TPanel;
     Edit1: TEdit;
@@ -21,7 +21,7 @@ type
   end;
 
 var
-  Form3: TForm3;
+  frmCadastroTarefa: TfrmCadastroTarefa;
 
 implementation
 

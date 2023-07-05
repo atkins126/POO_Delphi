@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
 
 type
-  TForm2 = class(TForm)
+  TfrmCadastroUsuario = class(TForm)
     Panel1: TPanel;
     Panel2: TPanel;
     btnSalvar: TButton;
@@ -22,7 +22,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  frmCadastroUsuario: TfrmCadastroUsuario;
 
 implementation
 

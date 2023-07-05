@@ -1,0 +1,22 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  listatarefas.view.main in 'view\listatarefas.view.main.pas' {Form1},
+  listatarefas.model.usuario in 'model\listatarefas.model.usuario.pas',
+  listatarefas.model.tarefas in 'model\listatarefas.model.tarefas.pas',
+  listatarefas.view.cadastro in 'view\listatarefas.view.cadastro.pas' {frmCadastroUsuario},
+  listatarefas.view.tarefa in 'view\listatarefas.view.tarefa.pas' {frmCadastroTarefa},
+  listatarefas.view.login in 'view\listatarefas.view.login.pas' {Form4};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmCadastroUsuario, frmCadastroUsuario);
+  Application.CreateForm(TfrmCadastroTarefa, frmCadastroTarefa);
+  Application.CreateForm(TForm4, Form4);
+  Application.Run;
+end.

@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
 
 type
-  TForm1 = class(TForm)
+  TfrmListadeTarefas = class(TForm)
     Panel1: TPanel;
     pnlTitulo: TPanel;
     Panel3: TPanel;
@@ -19,6 +19,7 @@ type
     Edit1: TEdit;
     btnPesquisar: TButton;
     ListBox1: TListBox;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,10 +27,31 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmListadeTarefas: TfrmListadeTarefas;
 
 implementation
 
+uses
+  listatarefas.view.login;
+
 {$R *.dfm}
 
+procedure TfrmListadeTarefas.FormCreate(Sender: TObject);
+var
+lLogin : TFrmLogin;
+begin
+  lLogin := TfrmLogin.Create(nil);
+  try
+    lLogin.ShowModal;
+
+  finally
+    lLogin.Free;
+
+  end;
+
+end;
+
 end.
+
+//variavel global não é uma boa pratica na declaração de um objeto
+//afinal fica na memoria caso não destrua

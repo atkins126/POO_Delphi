@@ -1,4 +1,4 @@
-object Form2: TForm2
+object frmCadastroUsuario: TfrmCadastroUsuario
   Left = 0
   Top = 0
   Caption = 'Cadastro de Usu'#225'rio'
@@ -21,10 +21,6 @@ object Form2: TForm2
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 304
-    ExplicitTop = 176
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object Panel2: TPanel
       Left = 0
       Top = 225
@@ -50,33 +46,26 @@ object Form2: TForm2
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 280
-      ExplicitTop = 120
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object Edit1: TEdit
         Left = 16
-        Top = 16
+        Top = 24
         Width = 473
-        Height = 25
+        Height = 21
         TabOrder = 0
-        Text = 'Edit1'
       end
       object Edit2: TEdit
         Left = 16
-        Top = 64
+        Top = 72
         Width = 473
-        Height = 25
+        Height = 21
         TabOrder = 1
-        Text = 'Edit1'
       end
       object Edit3: TEdit
         Left = 16
         Top = 117
         Width = 473
-        Height = 25
+        Height = 21
         TabOrder = 2
-        Text = 'Edit1'
       end
     end
   end

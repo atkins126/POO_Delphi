@@ -1,4 +1,4 @@
-object Form3: TForm3
+object frmCadastroTarefa: TfrmCadastroTarefa
   Left = 0
   Top = 0
   Caption = 'Cadastro de Tarefa'
@@ -21,10 +21,6 @@ object Form3: TForm3
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 392
-    ExplicitTop = 192
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object Panel2: TPanel
       Left = 0
       Top = 248
@@ -33,7 +29,6 @@ object Form3: TForm3
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitWidth = 635
       object Panel3: TPanel
         Left = 0
         Top = 5
@@ -42,7 +37,6 @@ object Form3: TForm3
         Align = alBottom
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitTop = 8
         object btnSalvar: TButton
           Left = 0
           Top = 1
@@ -57,17 +51,14 @@ object Form3: TForm3
       Left = 16
       Top = 24
       Width = 481
-      Height = 25
+      Height = 21
       TabOrder = 1
-      Text = 'Edit1'
     end
     object Memo1: TMemo
       Left = 16
       Top = 72
       Width = 481
       Height = 161
-      Lines.Strings = (
-        'Memo1')
       TabOrder = 2
     end
   end
