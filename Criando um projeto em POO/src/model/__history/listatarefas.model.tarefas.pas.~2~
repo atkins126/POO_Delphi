@@ -1,0 +1,20 @@
+unit listatarefas.model.tarefas;
+
+interface
+
+type
+  TTarefas = class
+  private
+    FTitulo: string;
+    FDescricao: string;
+    FDataCriacao: TDateTime;
+
+  public
+    property Titulo: string read FTitulo write FTitulo;
+    property Descricao: string read FDescricao write FDescricao;
+    property DataCriacao: TDateTime read FDataCriacao write FDataCriacao;
+  end;
+
+implementation
+
+end.
