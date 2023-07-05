@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 304
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 635
+    Height = 304
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = 224
+    ExplicitTop = 104
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Panel2: TPanel
+      Left = 0
+      Top = 0
+      Width = 635
+      Height = 41
+      Align = alTop
+      Caption = 'Lista de Tarefas '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      ExplicitLeft = 392
+      ExplicitTop = 56
+      ExplicitWidth = 185
+    end
+    object Panel3: TPanel
+      Left = 0
+      Top = 253
+      Width = 635
+      Height = 51
+      Align = alBottom
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitTop = 248
+      object btnCancelar: TButton
+        Left = 546
+        Top = 0
+        Width = 89
+        Height = 51
+        Caption = 'Cancelar'
+        TabOrder = 0
+      end
+      object btnNovo: TButton
+        Left = 0
+        Top = 0
+        Width = 89
+        Height = 51
+        Caption = 'Novo'
+        TabOrder = 1
+      end
+      object btnEditar: TButton
+        Left = 88
+        Top = 0
+        Width = 89
+        Height = 51
+        Caption = 'Editar'
+        TabOrder = 2
+      end
+    end
+    object Panel4: TPanel
+      Left = 0
+      Top = 41
+      Width = 635
+      Height = 212
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 2
+      ExplicitLeft = 344
+      ExplicitTop = 160
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+    end
+  end
+end

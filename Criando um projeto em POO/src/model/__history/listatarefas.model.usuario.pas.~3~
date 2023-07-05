@@ -1,0 +1,31 @@
+unit listatarefas.model.usuario;
+
+interface
+
+uses
+System.Generics.Collections;
+
+type
+
+  TUsuario = class
+
+  private
+    FNome: string;
+    FEmail: string;
+    FSenha: string;
+    FId: Integer;
+    FTarefas: TObjectList<TTarefas>;
+
+  public
+    property Id: Integer read FId write FId;
+    property Nome: string read FNome write FNome;
+    property Email: string read FEmail write FEmail;
+    property Senha: string read FSenha write FSenha;
+    property Tarefas: TObjectList<TTarefas> read FTarefas write FTarefas;
+
+
+  end;
+
+implementation
+
+end.
