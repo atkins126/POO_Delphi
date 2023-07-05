@@ -10,10 +10,9 @@ type
   TForm3 = class(TForm)
     Panel1: TPanel;
     Panel2: TPanel;
+    btnSalvar: TButton;
     Edit1: TEdit;
     Memo1: TMemo;
-    Panel3: TPanel;
-    btnSalvar: TButton;
   private
     { Private declarations }
   public

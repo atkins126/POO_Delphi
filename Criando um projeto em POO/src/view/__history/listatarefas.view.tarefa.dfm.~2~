@@ -34,23 +34,13 @@ object Form3: TForm3
       BevelOuter = bvNone
       TabOrder = 0
       ExplicitWidth = 635
-      object Panel3: TPanel
+      object btnSalvar: TButton
         Left = 0
-        Top = 5
-        Width = 523
-        Height = 46
-        Align = alBottom
-        BevelOuter = bvNone
+        Top = 0
+        Width = 89
+        Height = 51
+        Caption = 'Salvar'
         TabOrder = 0
-        ExplicitTop = 8
-        object btnSalvar: TButton
-          Left = 0
-          Top = 1
-          Width = 89
-          Height = 45
-          Caption = 'Salvar'
-          TabOrder = 0
-        end
       end
     end
     object Edit1: TEdit
